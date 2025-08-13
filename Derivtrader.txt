@@ -1,0 +1,86 @@
+import React from "react"; import "./App.css";
+
+export default function App() { const year = new Date().getFullYear();
+
+return ( <div className="app"> <header className="header"> <nav className="nav"> <div className="brand"> <div className="brand-badge">D</div> <span>Deriv Access</span> </div> <div className="nav-links"> <a href="#features">Features</a> <a href="#faq">FAQ</a> <a className="btn btn-outline" href="#get-started">Get Started</a> </div> </nav> </header>
+
+<main className="container">
+    <section className="hero">
+      <div>
+        <span className="chip">Blue Theme • Responsive • Fast</span>
+        <h1>Explore Deriv with a Clean, Modern Landing Page</h1>
+        <p>
+          Start in minutes using the official Deriv platform. Learn the basics, check
+          highlights, and click once to get going.
+        </p>
+        <div className="hero-buttons">
+          <a className="btn btn-primary" href="https://track.deriv.com/_twmjv0aTMCxMjdsyM5hasGNd7ZgqdRLk/1/" target="_blank" rel="noreferrer">Open Deriv</a>
+          <a className="btn btn-outline" href="#features">See Features</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" className="features">
+      <h2>Why this page?</h2>
+      <p>A simple, trustworthy handoff to the official Deriv website—no clutter.</p>
+      <div className="feature-grid">
+        <div className="card">
+          <h3>One‑click Access</h3>
+          <p>All buttons lead directly to Deriv using your referral link.</p>
+        </div>
+        <div className="card">
+          <h3>Mobile‑Ready</h3>
+          <p>Looks crisp on phones, tablets, and desktops.</p>
+        </div>
+        <div className="card">
+          <h3>Fast & Lightweight</h3>
+          <p>Pure HTML/CSS/JS—loads quickly even on slow networks.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="get-started" className="cta">
+      <div className="cta-inner">
+        <div>
+          <h2>Ready to explore Deriv?</h2>
+          <p>Visit the official site, create an account, and start exploring the tools available.</p>
+          <div className="cta-buttons">
+            <a className="btn btn-primary" href="https://track.deriv.com/_twmjv0aTMCxMjdsyM5hasGNd7ZgqdRLk/1/" target="_blank" rel="noreferrer">Open Deriv</a>
+            <a className="btn btn-outline" href="#faq">Read FAQ</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" className="faq">
+      <h2>Frequently Asked Questions</h2>
+      <details>
+        <summary>Is this the official Deriv website?</summary>
+        <p>No. This is a landing page that forwards you to the official site via your link.</p>
+      </details>
+      <details>
+        <summary>Is this financial advice?</summary>
+        <p>No. Trading involves risk. Do your own research before committing funds.</p>
+      </details>
+      <details>
+        <summary>Does the link track referrals?</summary>
+        <p>Yes. The buttons use your referral URL to open Deriv.</p>
+      </details>
+    </section>
+
+    <p className="disclaimer">Disclaimer: Trading may not be suitable for everyone. Past performance is not indicative of future results.</p>
+  </main>
+
+  <footer className="footer">
+    <div className="foot-grid">
+      <div>© {year} Deriv Access. All rights reserved.</div>
+      <div>
+        <a className="btn btn-outline" href="#top">Back to top ↑</a>
+        <a className="btn btn-primary" href="https://track.deriv.com/_twmjv0aTMCxMjdsyM5hasGNd7ZgqdRLk/1/" target="_blank" rel="noreferrer">Open Deriv</a>
+      </div>
+    </div>
+  </footer>
+</div>
+
+); }
+
